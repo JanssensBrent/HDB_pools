@@ -1,0 +1,28 @@
+.e_button_outline_white {
+  color: $color-white;
+  border: solid 1px $color-white;
+  border-radius: 50px;
+  padding: 15px 40px;
+  display: block;
+  text-decoration: none;
+}
+
+.e_button_outline_black {
+  color: $color-black;
+  border: solid 1px $color-black;
+  border-radius: 50px;
+  padding: 15px 40px;
+  display: block;
+  text-decoration: none;
+}
+
+.e_button_full_white {
+  color: $color-white;
+  border: solid 1px $color-white;
+  border-radius: 50px;
+  padding: 15px 40px;
+  display: block;
+  text-decoration: none;
+  color: $color-black;
+  background-color: $color-white;
+}

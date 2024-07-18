@@ -1,0 +1,20 @@
+.c_nav {
+    position: absolute;
+    width: 90%;
+    top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+
+    li {
+        list-style: none;
+        text-align: end;
+        margin-bottom: 20px;
+
+        a {
+            color: $color-white;
+            text-decoration: none;
+            font-weight: 200;
+        }
+    }
+}

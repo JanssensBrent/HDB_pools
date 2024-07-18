@@ -1,0 +1,16 @@
+.hoogwaardig{
+    margin: 200px 0 100px;
+
+    &__tekst{
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__lijn{
+        width: 2px;
+        height: 80px;
+        background-color: $color-black;
+        margin: 0 auto;
+    }
+}

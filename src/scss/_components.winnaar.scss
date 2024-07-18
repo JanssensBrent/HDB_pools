@@ -1,0 +1,33 @@
+.winnaar{
+    position: relative; 
+    margin: 0 35px;
+    overflow: hidden; 
+
+    &__tekst{
+        position: absolute; 
+        bottom: 50px;
+        left: 50px;
+        width: 50%;
+        color: $color-white;
+        z-index: 2; 
+
+        h2{
+            font-size: 100px;
+            margin: 0;
+        }
+    }
+
+    &__img{
+        margin: 0 auto;
+        width: 100%;
+        height: 90vh;
+        img{
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+}

@@ -1,0 +1,63 @@
+body {
+    background-color: $color-white;
+    overflow-x: hidden;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 100px;
+    color: $color-white;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 40px;
+
+    span {
+        color: $color-accent;
+    }
+}
+
+p {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+a {
+    font-size: 20px;
+}
+
+// scrollbar
+
+/* Dit is voor het hele document */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: $color-accent transparent;
+    border-radius: 50px;
+}
+
+/* Dit is voor Chrome, Edge en Safari */
+body::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 20px;
+    /* Breedte van de scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+    /* Kleur van de track */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $color-accent;
+    /* Kleur van de scrollbar */
+    border-radius: 10px;
+    /* Radius van de hoeken van de scrollbar */
+    border: 3px solid $color-white;
+    /* Maakt een rand rond de scrollbar */
+}
