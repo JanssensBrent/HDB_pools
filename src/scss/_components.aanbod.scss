@@ -30,6 +30,10 @@
         justify-content: center;
         transition: .3s;
 
+        &:hover{
+            box-shadow: 10px 10px 0px 0px $color-accent;
+        }
+
 
         &--monoblock {
             background-image: url(../assets/images/monoblock.webp);
