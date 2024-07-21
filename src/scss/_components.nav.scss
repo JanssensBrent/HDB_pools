@@ -12,7 +12,7 @@
         margin-bottom: 20px;
 
         a {
-            position: relative; 
+            position: relative;
             color: $color-white;
             text-decoration: none;
             font-weight: 200;
@@ -23,20 +23,20 @@
                 left: 0;
                 bottom: -5px;
                 width: 0;
-                height: 2px; 
-                background-color: $color-white; 
-                transition: width 0.3s ease; 
+                height: 2px;
+                background-color: $color-white;
+                transition: width 0.3s ease;
             }
 
             &:hover::after,
-            &.active::after { 
+            &.active::after {
                 width: 100%;
             }
         }
     }
 }
 
-.hamburger_menu{
+.hamburger_menu {
     height: 50px;
     width: 50px;
     display: flex;
@@ -44,63 +44,86 @@
     cursor: pointer;
     display: none;
     z-index: 999;
+    transition: .3s;
 }
 
-.c_menu_button{
+.c_menu_button {
     display: none;
 }
 
-.menu_boven{
+.menu_boven {
     height: 5px;
     width: 50%;
     background-color: $color-white;
     border-radius: 10px;
+    transition: .3s;
 }
-.menu_midden{
+
+.menu_midden {
     height: 5px;
     width: 100%;
     background-color: $color-white;
     border-radius: 10px;
     margin: 5px 0;
+    transition: .3s;
 }
-.menu_onder{
+
+.menu_onder {
     height: 5px;
     width: 50%;
     background-color: $color-white;
     border-radius: 10px;
     align-self: flex-end;
+    transition: .3s;
+}
+
+.hamburger_menu.active .menu_boven {
+    transform: translateY(10px) translateX(10px) rotate(45deg);
+    width: 80%;
+}
+
+.hamburger_menu.active .menu_midden {
+    opacity: 0;
+}
+
+.hamburger_menu.active .menu_onder {
+    transform: translateY(-10px) translateX(0) rotate(-45deg);
+    width: 80%;
 }
 
 @media (max-width: 1000px) {
     .hamburger_menu {
         display: flex;
         margin-right: 50px;
+        transition: .3s;
     }
 
-    .c_nav_logo{
+    .c_nav_logo {
         z-index: 999;
     }
 
-    .c_nav_button{
+    .c_nav_button {
         display: none;
     }
 
-    .c_menu_button{
+    .c_menu_button {
         display: block;
     }
 
     .nav_menu {
         background-color: rgba($color: $color-black, $alpha: .8);
-        width: 100vw; 
-        height: 100vh; /* Volledige hoogte van het viewport */
-        position: fixed; /* Zorgt ervoor dat het menu altijd zichtbaar is, ongeacht de scroll positie */
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
         top: 0;
-        left: 0;
-        z-index: 800; /* Zorgt ervoor dat het menu boven andere elementen wordt getoond */
+        left: 100vw;
+        z-index: 800;
         display: flex;
-        justify-content: center; /* Centreert horizontaal */
-        align-items: center; /* Centreert verticaal */
-        li{
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+
+        li {
             text-align: center;
         }
     }
