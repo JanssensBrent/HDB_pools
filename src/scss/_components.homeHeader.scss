@@ -19,7 +19,7 @@
         bottom: 50px;
         position: absolute;
 
-        H1 {
+        h1 {
             margin-bottom: 50px;
         }
     }
@@ -52,12 +52,12 @@
         &::after {
             content: '';
             position: absolute;
-            bottom: 0; // Gewijzigd van top naar bottom
+            bottom: 0; 
             left: 0;
-            width: 100%; // Zorg ervoor dat de breedte de volledige button bedekt
-            height: 0; // Begin met een hoogte van 0
+            width: 100%; 
+            height: 0; 
             background-color: $color-white;
-            transition: height 0.5s ease; // Animeer de hoogte in plaats van de breedte
+            transition: height 0.5s ease; 
             z-index: -1;
         }
 
@@ -65,7 +65,7 @@
             color: $color-black;
 
             svg {
-                fill: $color-black; // Maak de SVG zwart bij hover
+                fill: $color-black; 
             }
         }
 
@@ -77,7 +77,7 @@
             width: 50px;
             height: 50px;
             z-index: 999;
-            transition: fill 0.5s ease; // Voeg een overgang toe voor de vulkleur
+            transition: fill 0.5s ease;
             fill: $color-white;
         }
 
@@ -85,4 +85,11 @@
             margin-top: 0;
         }
     }
+}
+
+@media (max-width: 1300px) {
+    h1{
+        font-size:  70px;
+    }
+     
 }

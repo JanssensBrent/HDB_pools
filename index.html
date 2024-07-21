@@ -9,11 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./src/scss/styles.scss">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script src="/src/js/scrolldown.js"></script>
     <title>HDB_pools</title>
 </head>
 
 <body>
+    <script>
+        AOS.init();
+    </script>
     <nav class="c_nav">
         <div class="c_nav_button">
             <a class="e_button_outline_white" href="#">webshop</a>
@@ -21,14 +26,22 @@
         <div class="c_nav_logo">
             <img src="./src/assets/images/logo.svg" alt="Dit is het logo van hdb pools">
         </div>
+        <div class="hamburger_menu">
+            <div class="menu_boven"></div>
+            <div class="menu_midden"></div>
+            <div class="menu_onder"></div>
+        </div>
         <div class="nav_menu">
             <ul>
-                <li><a href="#">home</a></li>
+                <li><a href="#" class="active">home</a></li>
                 <li><a href="#">zwembbaden</a></li>
                 <li><a href="#">technisch</a></li>
                 <li><a href="#">Realisaties</a></li>
                 <li><a href="#">over ons</a></li>
                 <li><a href="#">contact</a></li>
+                <div class="c_menu_button">
+                    <a class="e_button_outline_white" href="#">webshop</a>
+                </div>
             </ul>
         </div>
     </nav>
@@ -36,10 +49,9 @@
         <div class="home_header__bg">
             <video autoplay loop muted>
                 <source src="./src/assets/video/header_bg.mp4" type="video/mp4">
-                Uw browser ondersteunt geen video tag.
             </video>
         </div>
-        <div class="home_header__titel">
+        <div class="home_header__titel" data-aos="fade-up">
             <h1>
                 Duik de zomer in met je eigen zwembad
             </h1>
@@ -49,17 +61,18 @@
                 <a class="e_button_outline_white" href="#">contacteer ons</a>
             </div>
         </div>
-        <div class="home_header__meer scroll-button">
+        <div class="home_header__meer scroll-button" data-aos="fade-up">
             <p>meer</p>
             <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 800 800">
                 <defs>
-                  
+
                 </defs>
-                <polygon class="cls-1" points="661.6 538.4 640.8 517.6 414.7 743.7 414.7 0 385.3 0 385.3 743.7 159.2 517.6 138.4 538.4 400 800 661.6 538.4"/>
-              </svg>
+                <polygon class="cls-1"
+                    points="661.6 538.4 640.8 517.6 414.7 743.7 414.7 0 385.3 0 385.3 743.7 159.2 517.6 138.4 538.4 400 800 661.6 538.4" />
+            </svg>
         </div>
     </header>
-    <section class="hoogwaardig">
+    <section class="hoogwaardig" data-aos="fade-up">
         <div class="hoogwaardig__tekst">
             <h2>elk zwembad dat we realiseren moet volledig beantwoorden aan de wensen van de klant én de
                 <span>hoogwaardige kwaliteit</span> die hdb pools voorop stelt.
@@ -68,40 +81,41 @@
         <div class="hoogwaardig__lijn"></div>
     </section>
 
-    <section class="winnaar">
-        <div class="winnaar__tekst">
-            <h2>eervoudig winnaar zwemadbouwer van het jaar</h2>
+    <section class="winnaar" data-aos="fade-up">
+        <div class="winnaar__tekst" data-aos="fade-up">
+            <h2>Meervoudig winnaar zwemadbouwer van het jaar</h2>
         </div>
         <div class="winnaar__img">
             <img src="./src/assets/images/winnaar.webp" alt="meervoudig winnaar">
         </div>
     </section>
     <section class="aanbod">
-        <div class="aanbod__header">
+        <div class="aanbod__header" data-aos="fade-up">
             <h2>ons aanbod</h2>
             <a class="e_button_outline_black" href="#">bekijk ons aanbod</a>
         </div>
         </div>
-        <div class="aanbod__cards_container">
+        <div class="aanbod__cards_container" data-aos="fade-up">
             <div class="aanbod__card aanbod__card--monoblock">
-                <h2>monoblock</h2>
+                <h2 data-aos="fade-up">monoblock</h2>
             </div>
             <div class="aanbod__card aanbod__card--beton">
-                <h2>beton</h2>
+                <h2 data-aos="fade-up">beton</h2>
             </div>
             <div class="aanbod__card aanbod__card--overloop">
-                <h2>overloop</h2>
+                <h2 data-aos="fade-up">overloop</h2>
             </div>
         </div>
+
     </section>
-    <section class="renovatie">
-        <div class="renovatie__tekst">
+    <section class="renovatie" data-aos="fade-up">
+        <div class="renovatie__tekst" data-aos="fade-up">
             <h2>renovatie van zwembaden</h2>
         </div>
         <div class="renovatie__img">
             <img src="./src/assets/images/renovatie.webp" alt="renovatie van zwembaden">
         </div>
-        <div class="renovatie__button">
+        <div class="renovatie__button" data-aos="fade-up">
             <a class="e_button_outline_white" href="#">bekijk onze aanpak</a>
         </div>
     </section>
