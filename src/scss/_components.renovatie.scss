@@ -1,38 +1,85 @@
-.renovatie{
-    position: relative; 
+.renovatie {
+    position: relative;
     margin: 0 35px 35px;
-    overflow: hidden; 
+    overflow: hidden;
 
-    &__tekst{
-        position: absolute; 
+    &__tekst {
+        position: absolute;
         top: 50px;
         right: 50px;
         width: 50%;
         color: $color-white;
-        z-index: 2; 
+        z-index: 2;
         text-align: end;
 
-        h2{
+        h2 {
             font-size: 100px;
             margin: 0;
         }
     }
 
-    &__img{
+    &__img {
         margin: 0 auto;
         width: 100%;
         height: 90vh;
-        img{
+
+        img {
             border-radius: 20px;
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-&__button{
-    position: absolute;
-    bottom: 80px;
-    right: 50px;
+
+    &__button {
+        position: absolute;
+        bottom: 80px;
+        right: 50px;
+    }
+
 }
 
+@media (max-width: 1200px) {
+    .renovatie {
+        &__tekst {
+            h2 {
+                font-size: 70px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 900px) {
+    .renovatie {
+        &__tekst {
+            width: 100%;
+
+            h2 {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .renovatie {
+        margin: 0 7%;
+
+        &__tekst {
+            right: 7%;
+            width: 80%;
+
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+
+        &__button {
+            position: absolute;
+            bottom: 50px;
+            right: 30px;
+        }
+    }
 }
