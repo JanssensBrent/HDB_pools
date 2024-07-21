@@ -127,4 +127,21 @@
             text-align: center;
         }
     }
+    
+}
+
+@media (max-width: 700px) {
+     .c_nav{
+        padding: 0 7%;
+     }
+     .hamburger_menu{
+        margin-right: 7%;
+     }
+
+     .c_nav_logo{
+        width: 100%;
+        img{
+            width: 70%;
+        }
+     }
 }
