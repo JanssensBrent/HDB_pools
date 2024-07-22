@@ -7,26 +7,29 @@
         position: absolute;
         bottom: 50px;
         left: 50px;
-        width: 50%;
+        width: fit-content;
         color: $color-white;
         z-index: 2;
+        margin: 0 70px 0 0;
 
         h2 {
             font-size: 100px;
             margin: 0;
+            width: 50%;
         }
     }
 
     &__img {
         margin: 0 auto;
         width: 100%;
-        height: 90vh;
-
+        max-width: 100%; // Zorgt ervoor dat de container niet breder wordt dan zijn inhoud
+        height: auto; // Past de hoogte automatisch aan om de aspect ratio te behouden
+    
         img {
             border-radius: 20px;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            width: 100%; // Zorgt ervoor dat de afbeelding de breedte van zijn container vult
+            height: auto; // Past de hoogte automatisch aan om de aspect ratio te behouden
+            object-fit: cover; // Zorgt ervoor dat de afbeelding de container vult zonder zijn aspect ratio te verliezen
         }
     }
 }
@@ -36,6 +39,7 @@
         &__tekst {
             h2 {
                 font-size: 70px;
+                width: 100%;
             }
         }
     }
@@ -44,8 +48,6 @@
 @media (max-width: 900px) {
     .winnaar {
         &__tekst {
-            width: 100%;
-
             h2 {
                 font-size: 50px;
             }
